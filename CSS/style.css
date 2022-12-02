@@ -9,6 +9,7 @@
 
 #menu-h{
     background-color: rgb(37, 37, 39);
+    font-size: 20px;
 }
 
 #menu-h ul {
@@ -32,8 +33,114 @@
 #menu-h ul li a:hover {
     background-color: rgb(24, 139, 233);
 }
+.container{
+    background-color: rgb(206, 255, 239);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    max-width: 100%px;
+    padding: 20px;
+    height: 75%;
+    align-items: center;
 
-#menu-h ul li:last-child a {
-    float: right;
-    background-color: rgb(24, 139, 233);
+}
+.entrada{
+    background-color: rgb(27, 154, 48);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-height: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 500px;
+    padding: 20px;
+    color: white;
+}
+.valor{
+    display: flex;
+    background-color: white;
+    height: 100px;
+    width: auto;
+    align-items: center;
+    font-size: 50px;
+    border-radius: 20px;
+    padding: 20px;
+    min-width: 300px;
+    color: black;
+}
+.saidas{
+    background-color: rgb(255, 47, 47);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-height: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 500px;
+    color: white;
+}
+.prazo{
+    background-color: rgb(92, 47, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-height: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 500px;
+    color: white;
+}
+body{
+    background-color: rgb(206, 255, 239);
+}
+
+.containerBoleto{
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 40px;
+
+}
+.botao a{
+    text-decoration: none;
+    color: white;
+}
+.botao a:link{
+    color: #FFF;
+}
+.botao a:hover{
+    background-color: rgb(46, 46, 50);
+    color: rgb(58, 228, 152);
+    font-size: 35px;
+ 
+}
+.botao a::selection{
+    background-color: rgb(46, 46, 50);
+    color: #FFF;
+ 
+}
+.botao{
+    display: flex;
+    background-color: rgb(46, 46, 50);
+    color: #FFF;
+    padding: 20px;
+    width: 300px; 
+    font-size: 30px;
+    border-radius: 50px;
+
+}
+.containerInsercao{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.form-group{
+    padding: 10px;
+}
+.containerBoleto{
+    display: flex;
+    flex-direction: column;
 }

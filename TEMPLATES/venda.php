@@ -1,40 +1,40 @@
 <?php include_once("header.php") ?>
 <div class="containerBoleto">
-    <h1 id="main-title">Meus Boletos</h1>
-    <div class="botao"><a href="inserirBoleto.php">Inserir</a></div>
+    <h1 id="main-title">Minhas Vendas</h1>
+    <div class="botao"><a href="inserirVenda.php">Inserir</a></div>
     <form action=""></form>
     <div class="container">
 
-        <?php if (count($Allmovimentacao) > 0): ?>
+        <?php if (count($Allvenda) > 0): ?>
         <table class="table" id="contacts-table">
             <thead>
                 <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Número do Doc</th>
-                    <th scope="col">Fornecedor</th>
-                    <th scope="col">Data de Vencimento</th>
+                    <th scope="col">Tipo de Venda</th>
+                    <th scope="col">Cliente</th>
+                    <th scope="col">Data da Venda</th>
                     <th escope="col">Valor</th>
                     <th escope="col">Obs</th>
                     <th escope="col"></th>
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($Allmovimentacao as $movimentacao): ?>
+                <?php foreach ($Allvenda as $venda): ?>
                 <tr>
                     <td scope="row">
                         <?= $movimentacao["id"] ?>
                     </td>
                     <td scope="row">
-                        <?= $movimentacao["nDocumento"] ?>
+                        <?= $movimentacao["tipoVenda"] ?>
                     </td>
                     <td scope="row">
-                        <?= $movimentacao["fornecedor"] ?>
+                        <?= $movimentacao["cliente"] ?>
                     </td>
                     <td scope="row">
-                        <?= $movimentacao["vencimento"] ?>
+                        <?= $movimentacao["dataVenda"] ?>
                     </td>
                     <td scope="row">
-                        <?= $movimentacao["valorBoleto"] ?>
+                        <?= $movimentacao["valorVenda"] ?>
                     </td>
                     <td scope="row">
                         <?= $movimentacao["observacao"] ?>
@@ -44,7 +44,7 @@
             </tbody>
         </table>
         <?php else: ?>
-        <p id="empty-list-text"> Não há boletos registrados
+        <p id="empty-list-text"> Não há vendas registrados
         </p>
         <?php endif; ?>
     </div>
