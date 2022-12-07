@@ -23,7 +23,7 @@ if (!empty($data)) {
             $erro = $e->getMessage();
             echo $erro;
         }
-        header("Location:" . $BASE_URL . "/../templates/index.php");
+        header("Location:" . $BASE_URL . "/../templates/boleto.php");
     }
 } 
 

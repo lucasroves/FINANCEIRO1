@@ -1,7 +1,7 @@
 <?php
 include_once("../config/url.php");
-include_once("../config/processamento.php");
-
+include_once("../config/processamentoBoleto.php");
+include_once("../config/processamentoVenda.php");
 ?>
 <head>
     <meta charset="UTF-8">

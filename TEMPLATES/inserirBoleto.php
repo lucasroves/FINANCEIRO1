@@ -1,7 +1,7 @@
 <?php include_once("header.php") ?>
 <div class="containerInsercao">
 <h1 id="main-title">Inserir Boletos</h1>
-    <form id="create-form" action="<?= $BASE_URL ?>/../config/processamento.php" method="POST">
+    <form id="create-form" action="<?= $BASE_URL ?>/../config/processamentoBoleto.php" method="POST">
         <input type="hidden" name="type" value="create">
         <div class="form-group">
             <label for="nDocumento">Número do Documento:</label>
@@ -13,7 +13,7 @@
         </div>
         <div class="form-group">
             <label for="vencimento">Data de Vencimento:</label>
-            <input type="date" class="form-control" id="vencimento" name="vencimento" placeholder="Informe a data do Vencimento" required>
+            <input type="date" class="form-control" id="date" name="vencimento" placeholder="Informe a data do Vencimento" required>
         </div>
         <div class="form-group">
             <label for="valorBoleto">Valor:</label>

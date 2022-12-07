@@ -34,7 +34,7 @@
                         <?= $movimentacao["vencimento"] ?>
                     </td>
                     <td scope="row">
-                        <?= $movimentacao["valorBoleto"] ?>
+                        R$<?= number_format($movimentacao["valorBoleto"], 2,",",".") ?>
                     </td>
                     <td scope="row">
                         <?= $movimentacao["observacao"] ?>
